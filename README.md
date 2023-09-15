@@ -102,7 +102,7 @@ Or with target platform specified:
 make darwin build
 ```
 
-Binaries will be located in sbfolder's `bin` folders:
+Binaries will be located in `bin` folders:
 * `init/bin/init`
 * `k8s-health/bin/health`
 * `lock/bin/lock`
@@ -133,6 +133,8 @@ make docker-push
 
 ## Release Notes
 
+* `1.0.4`
+    - Bumped Go version to 1.20.
 * `1.0.3`
     - Bumped Go version to 1.18.
 * `1.0.2`
