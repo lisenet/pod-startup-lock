@@ -20,7 +20,7 @@ ignored = [
   version = "0.26.8"
 
 [[constraint]]
-  name = "sigs.k8s.io/structured-merge-diff/v4"
+  name = "sigs.k8s.io/structured-merge-diff"
   version = "4.3.0"
 
 [[constraint]]
