@@ -43,8 +43,9 @@ The project is built using [Make](https://www.gnu.org/software/make/).
 ### 0. Install [Go](https://golang.org/dl/)
 
 ```bash
-wget https://golang.org/dl/go1.18.10.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.18.10.linux-amd64.tar.gz
+GO_VERSION="1.20.8"
+wget "https://golang.org/dl/go${GO_VERSION}.linux-amd64.tar.gz"
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf "go${GO_VERSION}.linux-amd64.tar.gz"
 export PATH=$PATH:/usr/local/go/bin
 ```
 
