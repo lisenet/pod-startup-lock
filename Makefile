@@ -22,24 +22,24 @@ dep:
 
 build:
 	@echo ">>> Make: Building all modules"
-	$(MAKE) -C k8s-health
 	$(MAKE) -C init
 	$(MAKE) -C lock
+	$(MAKE) -C k8s-health
 
 docker-build:
 	@echo ">>> Make: Building all docker images"
-	$(MAKE) -C k8s-health docker-build
 	$(MAKE) -C init docker-build
 	$(MAKE) -C lock docker-build
+	$(MAKE) -C k8s-health docker-build
 
 docker-push:
 	@echo ">>> Make: Pushing all docker images"
-	$(MAKE) -C k8s-health docker-push
 	$(MAKE) -C init docker-push
 	$(MAKE) -C lock docker-push
+	$(MAKE) -C k8s-health docker-push
 
 docker-push-latest:
 	@echo ">>> Make: Pushing all docker images with latest tag"
-	$(MAKE) -C k8s-health docker-push-latest
 	$(MAKE) -C init docker-push-latest
 	$(MAKE) -C lock docker-push-latest
+	$(MAKE) -C k8s-health docker-push-latest
