@@ -43,7 +43,7 @@ The project is built using [Make](https://www.gnu.org/software/make/).
 ### 0. Install [Go](https://golang.org/dl/)
 
 ```bash
-GO_VERSION="1.20.8"
+GO_VERSION="1.21.7"
 wget "https://golang.org/dl/go${GO_VERSION}.linux-amd64.tar.gz"
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf "go${GO_VERSION}.linux-amd64.tar.gz"
 export PATH=$PATH:/usr/local/go/bin
@@ -134,6 +134,8 @@ make docker-push
 
 ## Release Notes
 
+* `1.0.5`
+    - Bumped Go version to 1.21.
 * `1.0.4`
     - Bumped Go version to 1.20.
 * `1.0.3`
