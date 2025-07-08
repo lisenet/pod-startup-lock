@@ -43,7 +43,7 @@ The project is built using [Make](https://www.gnu.org/software/make/).
 ### 0. Install [Go](https://golang.org/dl/)
 
 ```bash
-GO_VERSION="1.22.4"
+GO_VERSION="1.24.4"
 wget "https://golang.org/dl/go${GO_VERSION}.linux-amd64.tar.gz"
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf "go${GO_VERSION}.linux-amd64.tar.gz"
 export PATH=$PATH:/usr/local/go/bin
@@ -56,6 +56,7 @@ The project uses Dep for dependency management. You can find installation instru
 ```bash
 mkdir -p ~/go/{bin,src}
 curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+export PATH=$PATH:$HOME/go/bin
 ```
 
 ```bash
@@ -134,6 +135,8 @@ make docker-push
 
 ## Release Notes
 
+* `1.0.7`
+    - Bumped Go version to 1.24.
 * `1.0.6`
     - Bumped Go version to 1.22.
 * `1.0.5`
